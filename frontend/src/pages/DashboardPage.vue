@@ -3,6 +3,14 @@
     <header class="page-header">
       <div>
         <h1 class="page-title">{{ t({ zh: '总览', en: 'Overview' }) }}<span class="page-phase-tag">MVP</span></h1>
+        <p class="dashboard-hero-copy">
+          {{
+            t({
+              zh: 'ActionHub Demo 演示 AI 如何将会议内容转成可跟进的纪要、行动项与风险闭环，适合面试演示、客户讲解与产品 walkthrough。',
+              en: 'ActionHub Demo shows how AI turns meetings into follow-through summaries, action items, and risk closure for demos, walkthroughs, and stakeholder reviews.',
+            })
+          }}
+        </p>
       </div>
     </header>
 
@@ -307,6 +315,14 @@ const isMeetingLive = (meetingId: string) => meetingId === 'esp32-c6-weekly'
 .dashboard-page {
   gap: 16px;
   min-width: 0;
+}
+
+.dashboard-hero-copy {
+  margin: 8px 0 0;
+  max-width: 920px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .dashboard-kpi-grid {

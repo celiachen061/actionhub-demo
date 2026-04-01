@@ -18,7 +18,7 @@ const route = useRoute()
 const appStore = useAppStore()
 
 watchEffect(() => {
-  const suffix = 'ActionHub'
+  const suffix = 'ActionHub Demo'
   document.documentElement.lang = appStore.language === 'zh' ? 'zh-CN' : 'en'
   if (route.name === 'meeting-detail' && typeof route.params.id === 'string') {
     const m = meetings.find((x) => x.id === route.params.id)
