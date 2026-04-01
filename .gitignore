@@ -5,3 +5,7 @@ dist/
 .env.*
 !.env.example
 .vercel/
+.cursor/
+__pycache__/
+*.py[cod]
+*.pyo
